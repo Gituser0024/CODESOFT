@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    font-family: sans-serif;
+
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+#main
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background: #5f5e5e; */
+}
+
+#left
+{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    /* background: #f29090; */
+}
+
+#lnav
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    /* font-weight: 500; */
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1
+{
+    font-size: 90px;
+    font-weight: 900 ;
+}
+
+#textcenter p
+{
+    opacity: .6;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    opacity: .8;
+}
+
+
+/* #lnavr i{
+    color: rgb(29 161 242   );
+} */
+
+#rtop-left
+{
+    width: 50%;
+    height: 100%;
+    background: #72de82;
+}
+
+#right
+{
+    width: 65%;
+    height: 100%;
+    background: #1976b4fd;
+}
+#rtop
+{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background: #6faed8;
+}
+#rbtm
+{
+    width: 100%;
+    height: 50%;
+    background-image: url(basket.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#rtop-left
+{
+    width: 50%;
+    height: 100%;
+    background-image: url(pineapple.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#rtop-right
+{
+    width: 50%;
+    height: 100%;
+    background-image: url(carlota-trillo-3QK6nwhoJGM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* object-fit: cover; */
+}
+
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+    }
+    #right{
+        width: 100%;
+    }
+}
